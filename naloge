@@ -1,0 +1,62 @@
+# Mood
+
+mood = input ("What mood are you: ")
+
+if mood == "Happy":
+    print ("It is great to see you happy!")
+
+elif mood == "Nervus":
+    print ("Take a deep breath 3 times.")
+
+elif mood == "Sad":
+    print("Cheer up!")
+
+elif mood == "Excited":
+    print("Oh yes, oh yes!")
+
+elif mood == "Relaxed":
+    print("Yeah...")
+
+else:
+    print("I don't recognize this mood.")
+    
+    
+    # Guess the secret number
+
+import random
+randomNumber = random.randrange(0,100)
+print("Random number has been generated")
+guessed = False
+while guessed==False:
+    userInput = int(input("Your guess pleas: "))
+    if userInput==randomNumber:
+        guessed = True
+        print("Well done!")
+    elif userInput>100:
+        print("Our guess range is between 0 and 100, please try a bit lower")
+    elif userInput<0:
+        print("Our guess range is between 0 and 100, please try a bit higher")
+    elif userInput>randomNumber:
+        print("Try one more time, a bit lower")
+    elif userInput < randomNumber:
+        print("Try one more time, a bit higher")
+
+print("End of program")
+
+
+# Kalkulator
+
+number_1 = int(input('Enter your first number: '))
+number_2 = int(input('Enter your second number: '))
+
+print('{} + {} = '.format(number_1, number_2))
+print(number_1 + number_2)
+
+print('{} - {} = '.format(number_1, number_2))
+print(number_1 - number_2)
+
+print('{} * {} = '.format(number_1, number_2))
+print(number_1 * number_2)
+
+print('{} / {} = '.format(number_1, number_2))
+print(number_1 / number_2)
